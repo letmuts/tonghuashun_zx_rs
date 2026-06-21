@@ -1,4 +1,4 @@
-# 同花顺自选股管理工具(Rust重写)
+# 同花顺自选股管理工具(sunnysab/ths-favorite Rust重写)
 同花顺股票自选管理，基于[sunnysab/ths-favorite](https://github.com/sunnysab/ths-favorite)项目的rust重写版。
 
 支持账号密码登录、Cookie 注入、
