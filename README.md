@@ -43,6 +43,27 @@ tonghuashun_rs --cookies "userid=xxx; sessionid=yyy" list
 ```
 
 ## 命令参考
+```
+>>> tonghuashun_rs.exe
+
+Usage: tonghuashun_rs.exe [OPTIONS] <COMMAND>
+
+Commands:
+  list   查看全部自选分组
+  self   "我的自选"操作
+  stock  股票操作
+  group  分组操作
+  help   Print this message or the help of the given subcommand(s)
+
+Options:
+      --username <USERNAME>          账号（手机号）
+      --password <PASSWORD>          密码
+      --cookies <COOKIES>            显式传入 Cookie 字符串
+      --cookie-cache <COOKIE_CACHE>  Cookie 缓存文件路径
+      --no-cache                     禁用数据缓存
+  -h, --help                         Print help
+PS C:\Users\light>
+```
 
 ### 全局参数
 
@@ -81,6 +102,7 @@ tonghuashun_rs stock del 消费 600519.SH
 
 # 批量删除
 tonghuashun_rs stock del 我的自选 000001.SZ 000002.SZ
+......
 ```
 
 **股票代码格式：**
@@ -129,7 +151,7 @@ src/
     └── dynamicplate.rs   # 动态板块查询协议
 ```
 
-## 登录流程
+## 实现说明
 
 本项目实现了同花顺移动客户端的完整四步登录流程：
 
