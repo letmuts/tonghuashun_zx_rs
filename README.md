@@ -21,10 +21,12 @@ cargo build --release
 
 ## 快速开始
 
+编译或从release中下载tonghuashun_rs.exe
+
 ### 1. 首次使用：账号密码登录
 
 ```bash
-tonghuashun_rs --username 13300000000 --password self list
+tonghuashun_rs.exe --username 13300000000 --password self list
 ```
 
 登录成功后,显示自选股票，Cookie 会被缓存到 `ths_cookie_cache.json`，后续可直接复用。（`tonghuashun_rs self list`即可）
@@ -32,8 +34,8 @@ tonghuashun_rs --username 13300000000 --password self list
 ### 2. 复用缓存直接使用
 
 ```bash
-tonghuashun_rs list
-tonghuashun_rs self list
+tonghuashun_rs.exe list
+tonghuashun_rs.exe self list
 ```
 
 ### 3. 显式注入 Cookie
