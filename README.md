@@ -1,6 +1,7 @@
 # 同花顺自选股管理工具(Rust重写)
+同花顺股票自选管理，基于[sunnysab/ths-favorite](https://github.com/sunnysab/ths-favorite)项目的rust重写版。
 
-使用 Rust 重写的同花顺自选股管理命令行工具。支持账号密码登录、Cookie 注入、
+支持账号密码登录、Cookie 注入、
 自选股分组查询、股票增删、分组管理和本地缓存。
 
 ## 环境要求
@@ -23,10 +24,10 @@ cargo build --release
 ### 1. 首次使用：账号密码登录
 
 ```bash
-tonghuashun_rs --username 13300000000 --password yourpass list
+tonghuashun_rs --username 13300000000 --password self list
 ```
 
-登录成功后，Cookie 会被缓存到 `ths_cookie_cache.json`，后续可直接复用。
+登录成功后,显示自选股票，Cookie 会被缓存到 `ths_cookie_cache.json`，后续可直接复用。（`tonghuashun_rs self list`即可）
 
 ### 2. 复用缓存直接使用
 
