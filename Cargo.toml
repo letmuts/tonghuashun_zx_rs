@@ -1,0 +1,39 @@
+[package]
+name = "tonghuashun_rs"
+version = "0.1.0"
+edition = "2024"
+description = "同花顺自选股管理工具 — Rust 重写版"
+
+# ── 依赖说明 ──
+# reqwest: HTTP 客户端，blocking 模式与 Python requests 对齐
+# rsa + pkcs8: RSA PKCS1v15 加密，用于登录密码加密
+# base64: Base64 编解码
+# sha2: SHA-256 哈希，用于缓存 key 生成
+# serde + serde_json: 数据序列化/反序列化
+# quick-xml: XML 解析（同花顺 auth/selfstock_detail 接口返回 XML）
+# encoding_rs: GBK 编码支持（multiStorage 协议中分组名需 GBK）
+# url: URL 编解码
+# log + env_logger: 日志
+# clap: CLI 命令行解析
+# thiserror: 错误类型派生
+# anyhow: 灵活的错误传播
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking", "cookies", "json"] }
+rsa = "0.9"
+pkcs8 = "0.10"
+base64 = "0.22"
+sha2 = "0.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+quick-xml = { version = "0.37", features = ["serialize"] }
+encoding_rs = "0.8"
+url = "2"
+log = "0.4"
+env_logger = "0.11"
+clap = { version = "4", features = ["derive"] }
+thiserror = "2"
+anyhow = "1"
+rand = "0.8"
+hex = "0.4"
+
