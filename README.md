@@ -215,3 +215,22 @@ cargo build --release
 - 接口协议可能随同花顺客户端更新而变化。
 - 移动端 User-Agent 模拟可能在未来被服务端识别。
 - Rust edition 为 2024，需要较新版本的 Rust 编译器。
+
+## 参考与许可
+感谢 @sunnysab 及[sunnysab/ths-favorite](https://github.com/sunnysab/ths-favorite)项目
+
+本项目采用 GNU General Public License v3.0 授权。
+```
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
